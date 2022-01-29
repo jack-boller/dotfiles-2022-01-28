@@ -7,6 +7,7 @@
  - `flameshot` Screenshot tool
  - `i3-gaps` Window Manager
  - `kitty` Terminal Emulator
+ - `neofetch` Fetch
  - `picom-git` Compositor
  - `polybar` Bar
 
