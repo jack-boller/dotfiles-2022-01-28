@@ -23,7 +23,7 @@ default_floating_border none
 gaps inner 10
 
 # Set wallpaper
-exec_always feh /usr/share/backgrounds --bg-scale
+exec_always feh /usr/share/backgrounds --bg-fill
 
 # Begin Compositor
 exec_always picom --no-vsync
@@ -187,3 +187,20 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# xrandr (make it easy to change screen dimensions)
+mode "xrandr" {
+	bindsym q exec "xrandr --output Virtual-1 --mode 1920x1080"
+	bindsym w exec "xrandr --output Virtual-1 --mode 1366x768"
+	bindsym e exec "xrandr --output Virtual-1 --mode 1152x768"
+
+	#back to normal
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+x mode "default"
+}
+
+bindsym $mod+x mode "xrandr"
+
+# Add custom key shortcuts
+bindsym Control+$mod+b exec ~/.scripts/lb.sh

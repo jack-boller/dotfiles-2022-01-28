@@ -1,5 +1,9 @@
 # Dotfiles 2022-01-28
 
+## Installation
+
+Make sure dependent packages are installed, and make sure .scripts are executable
+
 ## Dependent Packages
 
  - `brave` Browser
